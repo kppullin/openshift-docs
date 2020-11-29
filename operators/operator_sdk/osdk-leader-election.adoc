@@ -22,7 +22,7 @@ can be subject to a delay in electing a new leader. For example, when the leader
 Pod is on an unresponsive or partitioned node, the
 link:https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/#options[`pod-eviction-timeout`]
 dictates how it takes for the leader Pod to be deleted from the node and step
-down (default `5m`). See the link:https://godoc.org/github.com/operator-framework/operator-sdk/pkg/leader[Leader-for-life] Go documentation for more.
+down (default `5m`). See the link:https://godoc.org/github.com/operator-framework/operator-lib/leader[Leader-for-life] Go documentation for more.
 
 * _Leader-with-lease_: The leader Pod periodically renews the leader lease and
 gives up leadership when it cannot renew the lease. This implementation allows
